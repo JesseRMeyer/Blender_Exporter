@@ -27,7 +27,7 @@ def main():
     index_header_magic_number = np.uint64(0x0A1B2C3D4E5F)
 
     blender_to_export_axis_transform = axis_conversion(from_forward='-Y', from_up='Z', to_forward='Z', to_up='Y').to_4x4()
-    expoert_axis_to_blender_transform= blender_to_export_axis_transform.inverted()
+    export_axis_to_blender_transform= blender_to_export_axis_transform.inverted()
 
     for obj in selection:
         obj.select_set(True)
@@ -204,7 +204,7 @@ def main():
         obj.select_set(False)
 
         print(f"Exported {obj.name}")
-        obj.data.transform(expoert_axis_to_blender_transform)
+        obj.data.transform(export_axis_to_blender_transform)
 
     view_layer.objects.active = obj_active
 
