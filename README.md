@@ -1,6 +1,9 @@
 
 # Blender_Exporter
 
+# Important:
+- The exporter assumes the mesh is triangulated!
+
 ## TODO:
 - Specify the byte endianness
 - Vertex coloring
