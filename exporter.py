@@ -117,7 +117,7 @@ def main():
                     for idx in vert_indices_to_average_tangents:
                         average_tangent += unique_verts[idx][2]
                     
-                    average_tangent *= 0.5 * len(vert_indices_to_average_tangents)
+                    average_tangent /= len(vert_indices_to_average_tangents)
 
                     unique_vert_v1[2] = average_tangent
                     for idx in vert_indices_to_average_tangents:
