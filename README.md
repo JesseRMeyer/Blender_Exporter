@@ -3,6 +3,7 @@
 
 # Important:
 - The exporter assumes the mesh is triangulated!
+- Indices currently hard coded to u16
 
 ## TODO:
 - Specify the byte endianness
